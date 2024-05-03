@@ -226,3 +226,59 @@ li{
     color: #FFFFFF;
     text-align: center;
 }
+
+
+@media (max-width: 600px){
+    .title > h1 {
+        font-size: 2rem;
+        animation: left-in 2s linear;
+    }
+    
+    @keyframes left-in {
+        0%{
+            transform: translateX(60px)
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    
+    .title > p {
+        font-size: 1.5rem;
+        animation: right-in 2s linear;
+    }
+
+    @keyframes right-in {
+        0%{
+            transform: translateX(-60px)
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+
+    
+    .about > .second > p,
+    .about > .third > p,
+    .about > .fourth > p{
+        font-size: 1.5rem;
+        padding-left: 20%;
+        padding-top: 10%;
+    }
+    
+    .about > .fifth > p {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+    
+    .about > .second > ul,
+    .about > .third > ul,
+    .about > .fourth > ul {
+        padding-left: 19%;
+    }
+    
+    .footer > ul {
+        padding-top: 60px;
+    }
+    
+}
