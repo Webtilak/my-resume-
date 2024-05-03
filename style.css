@@ -17,7 +17,6 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
 .title > h1 {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -151,10 +150,12 @@ hr {
     font-size: 1.5rem;
     padding-top: 2%;
     padding-left: 38%;
+    margin: auto ;
 }
 
 li{
     padding: 10px;
+    margin: auto;
 }
 
 .thank {
@@ -231,7 +232,7 @@ li{
 @media (max-width: 600px){
     .title > h1 {
         font-size: 2rem;
-        animation: left-in 2s linear;
+        animation: left-in 1.5s linear;
     }
     
     @keyframes left-in {
@@ -245,7 +246,7 @@ li{
     
     .title > p {
         font-size: 1.5rem;
-        animation: right-in 2s linear;
+        animation: right-in 1.5s linear;
     }
 
     @keyframes right-in {
@@ -256,13 +257,34 @@ li{
             transform: translateX(0px);
         }
     }
+    
+    .about > .first > h2,
+    .about > .second > h2,
+    .about > .third > h2,
+    .about > .fourth > h2,
+    .about > .fifth > h2 {
+        background: linear-gradient(135deg, #f403d1, #64b5f6);
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        width: 100%;
+    }
+   
 
+    .about > .first > p{
+        font-size: 1.5rem;
+        padding-right: 10%;
+        padding-left: 15%;
+        padding-top: 1%;
+        text-align: center ;
+    }
     
     .about > .second > p,
     .about > .third > p,
     .about > .fourth > p{
         font-size: 1.5rem;
-        padding-left: 20%;
+        padding-right: 10%;
+        padding-left: 26%;
         padding-top: 10%;
     }
     
@@ -274,11 +296,16 @@ li{
     .about > .second > ul,
     .about > .third > ul,
     .about > .fourth > ul {
-        padding-left: 19%;
+        padding-left: 23%;
+        font-size: 1.3rem;
     }
     
     .footer > ul {
         padding-top: 60px;
+    }
+
+    .footer > ul > li > a{
+        font-size: 0.9rem;
     }
     
 }
